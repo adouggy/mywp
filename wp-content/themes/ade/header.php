@@ -44,7 +44,9 @@
 		<div class="title-bottom-left">
 		<div class="title-top-right">
 		<div class="title-bottom-right">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Go to homepage"><span>promenade.me</span></a></h1>
+			<div class="ade">
+				<h1 class="ade"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Go to homepage"><span>promenade.me</span></a></h1>
+			</div>
 			<p>ade是个码农兼孩儿他爹，ade立志做个贤妻良母&hellip;</p>
 		</div>
 		</div>
@@ -60,41 +62,46 @@
 
 	<div class="content">
 	<div class="column-left">
-		<h3>check it out:</h3>
+
+		<!--<h3>Menu</h3>-->
 		<a href="#skip-menu" class="hidden">Skip menu</a>
-		<ul class="menu">
-			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="active">home</a></li>
-			<li><a href="#">me</a></li>
-			<li><a href="javascript:clickMenu('comment.php');">msg me</a></li>
-			<li ><a href="http://www.sissifox.com">hi, Sissi</a></li>
-			<li ><a href="http://gathering.promenade.me">highSchool gathering</a></li>
+		<div class="ade">
+			<ul class="menu">
+				<!--class="active"-->
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" >home sweet home</a></li>
+				<?php wp_list_pages('title_li='); ?>
+				<li ><a href="http://www.sissifox.com" target="newWindow">hi, Sissi</a></li>
+				<li ><a href="http://gathering.promenade.me" target="newWindow">highSchool gathering</a></li>
 
 
-			 <?php $args = array(
-			    'smallest'                  => 8, 
-			    'largest'                   => 22,
-			    'unit'                      => 'pt', 
-			    'number'                    => 45,  
-			    'format'                    => 'flat',
-			    'separator'                 => " ",
-			    'orderby'                   => 'name', 
-			    'order'                     => 'ASC',
-			    'exclude'                   => null, 
-			    'include'                   => null, 
-			    'topic_count_text_callback' => default_topic_count_text,
-			    'link'                      => 'view', 
-			    'taxonomy'                  => 'post_tag', 
-			    'echo'                      => true,
-			     'child_of'                   => null
-			); ?>
-			<li><h4>per tag</h4><br />
-			<?php wp_tag_cloud( $args ); ?> 
-			</li>
+				 <?php $args = array(
+				    'smallest'                  => 8, 
+				    'largest'                   => 22,
+				    'unit'                      => 'pt', 
+				    'number'                    => 45,  
+				    'format'                    => 'flat',
+				    'separator'                 => " ",
+				    'orderby'                   => 'name', 
+				    'order'                     => 'ASC',
+				    'exclude'                   => null, 
+				    'include'                   => null, 
+				    'topic_count_text_callback' => default_topic_count_text,
+				    'link'                      => 'view', 
+				    'taxonomy'                  => 'post_tag', 
+				    'echo'                      => true,
+				     'child_of'                   => null
+				); ?>
+				<li><h4>per tag blog</h4><br />
+				<?php wp_tag_cloud( $args ); ?> 
+				</li>
 
-			<li>
-			 <?php get_search_form(); ?> 
-			</li>
-		</ul>
+				<li>
+				 <?php get_search_form(); ?> 
+				</li>
+
+
+			</ul>
+		</div>
 		</div>
 		
 		<div id="skip-menu"></div>

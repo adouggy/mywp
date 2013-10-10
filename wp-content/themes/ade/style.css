@@ -1822,21 +1822,27 @@ a:hover {
 	margin: 4px 0 0 21px;
 	padding-bottom: 12px;
 }
-h1 {
+
+.ade{
+
+}
+
+.ade h1{
 	font: normal 2.4em Georgia, "Times New Roman", Times, serif;
 	color: #FFFFFF;
 	padding-top: 25px;
 	margin-left: 20px;
 }
-h1 a:link, h1 a:visited {
+
+.ade h1 a:link, h1 a:visited {
 	color: #FFFFFF;
 	text-decoration: none;
 	font-weight: normal;
 }
-h1 span {
+.ade h1 span {
 	color: #FFB849;
 }
-h2 {
+.ade h2 {
 	font: normal 1.5em Georgia, "Times New Roman", Times, serif;
 	color: #004F8B;
 	letter-spacing: 1px;
@@ -1844,23 +1850,23 @@ h2 {
 	padding-left: 25px;
 	margin-bottom: 7px;
 }
-ul.menu {
+.ade ul.menu {
 	list-style-type: none;
 }
-ul.menu li {
+.ade ul.menu li {
 	background: url('./img/menu-li-divider.gif') no-repeat 50% 100%;
 	padding: 18px 0;
 }
-ul.menu li a, ul.menu li a:visited {
+.ade ul.menu li a, ul.menu li a:visited {
 	color: #FFFFFF;
 	font-weight: normal;
 	text-decoration: none;
 	padding: 4px 7px;
 }
-ul.menu li a:hover, ul.menu li a.active {
+.ade ul.menu li a:hover, ul.menu li a.active {
 	background-color: #002F53;
 }
-ul.menu li.last {
+.ade ul.menu li.last {
 	background: none;
 }
 .content {
@@ -1948,4 +1954,8 @@ margin-right: 40px;
 .footer-info-left a, .footer-info-left a:visited, .footer-info-right a, .footer-info-right a:visited {
 font-weight: normal;
 color: #626262;
+}
+
+#content{
+	width: 500px;
 }
