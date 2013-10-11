@@ -1743,7 +1743,7 @@ img#wpstats {
 /*
 for ade
 */
-* { margin: 0; padding: 0; }
+/** { margin: 0; padding: 0; }
 html { 
 	height: 100%; 
 	font-size: 62.5%;
@@ -1757,15 +1757,15 @@ body {
 .selector {font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu}
 .ade p {
 	font-family: "Microsoft YaHei";
-}
-.ade a:link, a:visited {
+}*/
+/*.ade a:link, a:visited {
 	color: #004F8B;
 	text-decoration: underline;
 	font-weight: bolder;
 }
 .ade a:hover {
 	text-decoration: none;
-}
+}*/
 
 /* for header menu*/
 #header_menu {
