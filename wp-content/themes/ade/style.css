@@ -1755,15 +1755,15 @@ body {
 	font: 1.4em Verdana, Arial, Helvetica, sans-serif, "Microsoft YaHei";
 }
 .selector {font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu}
-p {
+.ade p {
 	font-family: "Microsoft YaHei";
 }
-a:link, a:visited {
+.ade a:link, a:visited {
 	color: #004F8B;
 	text-decoration: underline;
 	font-weight: bolder;
 }
-a:hover {
+.ade a:hover {
 	text-decoration: none;
 }
 
